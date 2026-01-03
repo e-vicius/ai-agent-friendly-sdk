@@ -14,6 +14,11 @@ A generic SDK for Next.js developers to generate AI-agent optimized content stru
 - **Semantically Dense**: Returns pure Markdown, making it easier for agents to parse structure and keys without HTML noise.
 - **Agent Discovery**: Auto-generates `llms.txt`, the emerging standard for agent-crawlers to map your site's knowledge.
 
+
+## Architecture
+
+![SDK Workflow](assets/workflow.png)
+
 ## Installation
 
 ```bash 
@@ -50,16 +55,8 @@ node dist/cli.js build
 3. **Check Output**:
    - Files will be in `public/ai/*.md`.
    - `llms.txt` will be in `public/`.
-
-## Architecture Notes
-- **Models**: Currently defaults to `gemini-2.5-pro` for stability.
-- **Caching**: Stored in `.next/cache/ai-sdk/`. Delete this folder to force regeneration.
-
-## Architecture
-
-![SDK Workflow](assets/workflow.png)
-
-### Data Level
+  
+4. ### Data Level
 
 ```mermaid
 graph TD
@@ -85,6 +82,11 @@ graph TD
         Generator -->|Snippet| Robots[Robots.txt Log]
     end
 ```
+
+## Architecture Notes
+- **Models**: Currently defaults to `gemini-2.5-pro` for stability.
+- **Caching**: Stored in `.next/cache/ai-sdk/`. Delete this folder to force regeneration.
+
 
 ## References
 This project is based on research and guidelines for optimizing websites for AI agents:
