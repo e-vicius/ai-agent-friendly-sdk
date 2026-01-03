@@ -5,3 +5,5 @@ dist
 .DS_Store
 .next
 coverage
+assets/
+public/
