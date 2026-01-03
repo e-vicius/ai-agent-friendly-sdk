@@ -1,17 +1,35 @@
 {
   "name": "ai-agent-friendly-sdk",
   "version": "1.0.0",
-  "description": "",
+  "description": "Next.js SDK to generate AI-agent optimized Polish Markdown pages using Gemini 2.5",
   "main": "dist/index.js",
   "bin": {
     "ai-sdk": "./dist/cli.js"
   },
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "nextjs",
+    "ai-agent",
+    "gemini",
+    "seo",
+    "llm",
+    "markdown",
+    "polish"
+  ],
+  "author": "Ernestas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-vicius/nextjs-ai-agent-friendly-sdk.git"
+  },
   "type": "commonjs",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

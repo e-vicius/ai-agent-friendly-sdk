@@ -1,0 +1,10 @@
+src/
+.env
+.env.local
+.env.example
+tsconfig.json
+ai-sdk.config.js
+test-server.js
+assets/
+.git/
+.gitignore

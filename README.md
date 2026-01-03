@@ -22,8 +22,16 @@ A generic SDK for Next.js developers to generate AI-agent optimized content stru
 ## Installation
 
 ```bash 
+```bash 
+# 1. Initialize locally
 npm install
 npm run build
+npm link
+
+# 2. Run anywhere on your system
+ai-sdk build
+# or
+npx ai-sdk build
 ```
 
 ## Configuration
