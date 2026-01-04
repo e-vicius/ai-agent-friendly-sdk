@@ -1,5 +1,7 @@
 # ![AI Agent Friendly SDK](assets/logo.png)
 
+<a href="https://www.producthunt.com/products/ai-agent-friendly-sdk?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-ai-agent-friendly-sdk" target="_blank" rel="noopener noreferrer"><img alt="AI Agent Friendly SDK - Optimize your website for AI Agents, not just humans. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1058067&theme=dark&t=1767523728677"></a>
+
 A generic SDK for **Next.js, Remix, Vue, Svelte, or any web framework** developers to generate AI-agent optimized content structure (MD format), translated to Polish (optimized for LLM understanding), from existing pages.
 
 It works by connecting to your local or staging server (HTTP), cleaning the HTML, utilizing **Google Gemini 3.0 Pro** to enhance the semantics, and saving the results as static Markdown files.
