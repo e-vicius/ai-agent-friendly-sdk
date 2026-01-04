@@ -5,6 +5,7 @@
     "exports": "./mod.ts",
     "publish": {
         "include": [
+            "mod.ts",
             "src/**/*.ts",
             "README.md",
             "package.json",

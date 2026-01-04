@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 dotenv.config({ path: '.env.local', override: true });
 
-export const ConfigSchema = z.object({
+export const ConfigSchema: z.ZodType<any> = z.object({
     baseUrl: z.string().url(),
     pages: z.array(z.string()),
     outputDir: z.string().default('./public/ai'),

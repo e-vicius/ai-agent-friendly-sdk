@@ -59,7 +59,7 @@ module.exports = {
 
 ## Usage
 
-1. **Start your specific Next.js app** (e.g., `npm run dev`).
+1. **Start your local Web App** (e.g., `npm run dev` in Next.js, Remix, etc).
 2. **Run the SDK**:
 
 ```bash
