@@ -5,7 +5,7 @@ export class Processor {
     private genAI: GoogleGenerativeAI;
     private model: any;
 
-    constructor(apiKey: string, modelName: string = 'gemini-2.5-pro') {
+    constructor(apiKey: string, modelName: string = 'gemini-3.0-pro') {
         this.genAI = new GoogleGenerativeAI(apiKey);
 
         if (apiKey === 'MOCK') {

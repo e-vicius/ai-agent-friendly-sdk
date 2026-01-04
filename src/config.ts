@@ -11,7 +11,7 @@ export const ConfigSchema: z.ZodType<any> = z.object({
     pages: z.array(z.string()),
     outputDir: z.string().default('./public/ai'),
     geminiApiKey: z.string().optional(),
-    model: z.string().default('gemini-2.5-pro'),
+    model: z.string().default('gemini-3.0-pro'),
 });
 
 export type Config = z.infer<typeof ConfigSchema>;

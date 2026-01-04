@@ -23,7 +23,7 @@ program
     baseUrl: 'http://localhost:3000',
     pages: ['/'],
     outputDir: './public/ai',
-    model: 'gemini-2.5-pro' // or 'gemini-2.0-flash'
+    model: 'gemini-3.0-pro' // or 'gemini-2.0-flash'
 };`;
 
         try {

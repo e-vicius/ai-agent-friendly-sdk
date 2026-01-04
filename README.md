@@ -2,11 +2,11 @@
 
 A generic SDK for **Next.js, Remix, Vue, Svelte, or any web framework** developers to generate AI-agent optimized content structure (MD format), translated to Polish (optimized for LLM understanding), from existing pages.
 
-It works by connecting to your local or staging server (HTTP), cleaning the HTML, utilizing **Google Gemini 2.5 Pro** to enhance the semantics, and saving the results as static Markdown files.
+It works by connecting to your local or staging server (HTTP), cleaning the HTML, utilizing **Google Gemini 3.0 Pro** to enhance the semantics, and saving the results as static Markdown files.
 
 ## Features
 - **Fetch & Clean**: Crawls specified pages and strips non-essential HTML.
-- **Translate & Optimize**: Uses Google Gemini (v2.5-pro) to convert content to high-quality Polish Markdown.
+- **Translate & Optimize**: Uses Google Gemini (v3.0-pro) to convert content to high-quality Polish Markdown.
 - **Caching**: Hashes content to avoid redundant API calls.
 - **Metadata**: Generates `llms.txt` and `robots.txt` snippets.
 
