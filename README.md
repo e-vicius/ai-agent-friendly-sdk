@@ -3,7 +3,6 @@
 <a href="https://www.producthunt.com/products/ai-agent-friendly-sdk?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-ai-agent-friendly-sdk" target="_blank" rel="noopener noreferrer"><img alt="AI Agent Friendly SDK - Optimize your website for AI Agents, not just humans. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1058067&theme=dark&t=1767523728677"></a>
 
 [![JSR](https://jsr.io/badges/@kyolt/ai-friendly-sdk)](https://jsr.io/@kyolt/ai-friendly-sdk)
-[![JSR Score](https://jsr.io/badges/@kyolt/ai-friendly-sdk/score)](https://jsr.io/@kyolt/ai-friendly-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini%203.0-8E44AD.svg)](https://ai.google.dev/)
 
