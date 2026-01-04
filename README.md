@@ -1,6 +1,8 @@
 # ![AI Agent Friendly SDK](assets/logo.png)
 
-A generic SDK for Next.js developers to generate AI-agent optimized content structure (MD format), translated to Polish (optimized for LLM understanding), from existing pages.
+A generic SDK for **Next.js, Remix, Vue, Svelte, or any web framework** developers to generate AI-agent optimized content structure (MD format), translated to Polish (optimized for LLM understanding), from existing pages.
+
+It works by connecting to your local or staging server (HTTP), cleaning the HTML, utilizing **Google Gemini 2.5 Pro** to enhance the semantics, and saving the results as static Markdown files.
 
 ## Features
 - **Fetch & Clean**: Crawls specified pages and strips non-essential HTML.
