@@ -16,6 +16,32 @@ program
     .version('1.0.0');
 
 program
+    .command('init')
+    .description('Initialize the SDK configuration')
+    .action(async () => {
+        const configContent = `module.exports = {
+    baseUrl: 'http://localhost:3000',
+    pages: ['/'],
+    outputDir: './public/ai',
+    model: 'gemini-2.5-pro' // or 'gemini-2.0-flash'
+};`;
+
+        try {
+            const fs = require('fs-extra');
+            if (await fs.pathExists('ai-sdk.config.js')) {
+                console.log(chalk.yellow('⚠️  ai-sdk.config.js already exists. Skipping.'));
+            } else {
+                await fs.writeFile('ai-sdk.config.js', configContent);
+                console.log(chalk.green('✅ Created ai-sdk.config.js'));
+            }
+
+            console.log(chalk.cyan('\nNext Step: Add GEMINI_API_KEY to your .env file and run "npx ai-sdk build"'));
+        } catch (e: any) {
+            console.error(chalk.red('Error creating config: ' + e.message));
+        }
+    });
+
+program
     .command('build')
     .description('Build AI-friendly pages from existing routes')
     .option('-c, --config <path>', 'Path to configuration file', 'ai-sdk.config.js')

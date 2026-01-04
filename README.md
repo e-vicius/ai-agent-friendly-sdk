@@ -21,20 +21,28 @@ It works by connecting to your local or staging server (HTTP), cleaning the HTML
 
 ![SDK Workflow](assets/workflow.png)
 
-## Installation
-
 ```bash 
-```bash 
-# 1. Initialize locally
-npm install
-npm run build
-npm link
+# Run directly without installing
+npx jsr run @kyolt/ai-friendly-sdk init
 
-# 2. Run anywhere on your system
-ai-sdk build
-# or
-npx ai-sdk build
+# Or install to your project
+npx jsr add @kyolt/ai-friendly-sdk
 ```
+
+## Quick Start
+1. **Initialize** (Creates `ai-sdk.config.js`):
+   ```bash
+   npx jsr run @kyolt/ai-friendly-sdk init
+   ```
+
+2. **Configure**:
+   - Open `ai-sdk.config.js` and set your `baseUrl` and `pages`.
+   - Ensure `GEMINI_API_KEY` is in your `.env` file.
+
+3. **Build**:
+   ```bash
+   npx jsr run @kyolt/ai-friendly-sdk build
+   ```
 
 ## Configuration
 
