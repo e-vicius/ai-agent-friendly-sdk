@@ -89,7 +89,7 @@ graph TD
         Cache -->|Miss| Processor[Processor Module]
         
         Processor -->|Clean HTML| Cheerio[Cheerio Parser]
-        Cheerio -->|Cleaned Text| Gemini[Google Gemini 2.5 Pro]
+        Cheerio -->|Cleaned Text| Gemini[Google Gemini 3.0 Pro]
         Gemini -->|Polish Markdown| CacheStore[Update Cache]
         CacheStore --> Generator
     end
@@ -102,7 +102,7 @@ graph TD
 ```
 
 ## Architecture Notes
-- **Models**: Currently defaults to `gemini-2.5-pro` for stability.
+- **Models**: Currently defaults to `gemini-3.0-pro` for stability.
 - **Caching**: Stored in `.next/cache/ai-sdk/`. Delete this folder to force regeneration.
 
 
