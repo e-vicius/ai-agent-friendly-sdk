@@ -1,4 +1,4 @@
-# AI Agent Friendly SDK
+# ![AI Agent Friendly SDK](assets/logo.png)
 
 A generic SDK for Next.js developers to generate AI-agent optimized content structure (MD format), translated to Polish (optimized for LLM understanding), from existing pages.
 
